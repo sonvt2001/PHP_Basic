@@ -41,4 +41,23 @@
     echo "$a" . "</br>";
     echo '$a' . "</br>";
 
+
+    /*
+      Varialbe
+     */
+
+     echo "<h3>Variable Golobal</h3>";
+
+     $num1 = 2;
+     $num2 = 3;
+     
+     function sum()
+     {
+        $GLOBALS['sum1'] = $GLOBALS['num1'] + $GLOBALS['num2'];
+     }
+
+     sum();
+
+     echo $sum1;
+
 ?>
