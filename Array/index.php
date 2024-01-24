@@ -43,4 +43,84 @@
         }
         echo "</ul>";
     }
+
+    echo "</br>";
+ 
+    $ten = array("tí", "tèo", "tú");
+    
+    print_r($ten);
+    
+    echo "<h4>Add elements</h4>";
+
+    $ten[] = "tình"; 
+    $ten[] = "tru";
+
+    print_r($ten);
+
+    echo "<h4>Edit elements</h4>";
+
+    $ten[2] = "su";
+
+    print_r($ten);
+
+    echo "<h4>Delete elements</h4>";
+
+    unset($ten[2]);
+
+    print_r($ten);
+
+    echo "</br>";
+
+    $num = array(1,2,3,4,5);
+
+    $num[] = "son";
+
+    echo "<h4>For loop with array</h4>";
+
+    for ( $i = 0 ; $i < count($num); $i++ )
+    {
+        echo ( $num[$i]);
+        echo "</br>";
+    }
+
+    $a = array("K", "H", "L" , "M", "A" , "B" , "E", "F", "D");
+
+    echo "<h4>Sort Array</h4>";
+
+    sort($a);
+
+    print_r($a);
+
+    echo "<h4>Rsort Array</h4>";
+
+    rsort($a);
+
+    print_r($a);
+
+    echo "</br>";
+
+    $str1 = "01/01/2001";
+
+    echo "</br>";
+    
+    printf( $str1);
+
+    echo "<h4>Convert String to Array</h4>";
+
+    $mang1 = explode("/", $str1);
+
+    print_r($mang1);
+
+    echo "</br>";
+
+    $str2 = array("xin", "chào");
+
+    print_r( $str2 );
+
+    echo "<h4>Convert Array to String</h4>";
+
+    $mang2 = implode(" ",$str2);
+
+    print_r($mang2);
+
  ?>
